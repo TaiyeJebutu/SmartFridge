@@ -1,0 +1,64 @@
+{
+    "inventory": [
+        {
+            "barcode": "000001",
+            "item": "Bread",
+            "amount": "5",
+            "calories": "50",
+            "proteins": "4",
+            "salts": "4",
+            "sugars": "4",
+            "fats": "4"
+        },
+        {
+            "barcode": "000002",
+            "item": "Milk",
+            "calories": "100",
+            "amount": "1",
+            "protein": "4",
+            "fats": "4",
+            "sugars": "4",
+            "salts": "4"
+        },
+        {
+            "barcode": "000003",
+            "item": "Chocolate",
+            "calories": "300",
+            "amount": "10",
+            "protein": "4",
+            "fats": "4",
+            "sugars": "4",
+            "salts": "4"
+        },
+        {
+            "barcode": "000004",
+            "item": "Oreo Chocolate",
+            "calories": "500",
+            "amount": "7",
+            "protein": "4",
+            "fats": "4",
+            "sugars": "4",
+            "salts": "4"
+        },
+        {
+            "barcode": "000005",
+            "item": "Bread",
+            "calories": "600",
+            "amount": "7",
+            "protein": "4",
+            "fats": "4",
+            "sugars": "4",
+            "salts": "4"
+        },
+        {
+            "barcode": "000006",
+            "item": "Oreo Biscuit",
+            "calories": "700",
+            "amount": "7",
+            "protein": "4",
+            "fats": "4",
+            "sugars": "4",
+            "salts": "4"
+        }
+    ]
+}

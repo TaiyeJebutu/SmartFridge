@@ -1,0 +1,2 @@
+Barcode: 5005002 | Item: Pear | Amount: 1 | Calories: 12 | Protein: 34 | Fats: 22 | Sugars: 35 | Salts: 22
+Barcode: 5005001 | Item: Apple | Amount: 1 | Calories: 20 | Protein: 30 | Fats: 15 | Sugars: 25 | Salts: 22
