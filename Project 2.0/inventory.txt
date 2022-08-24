@@ -2,13 +2,13 @@
     "inventory": [
         {
             "barcode": "000001",
-            "item": "Bread",
-            "amount": "5",
-            "calories": "50",
-            "proteins": "4",
-            "salts": "4",
-            "sugars": "4",
-            "fats": "4"
+            "item": "BREAD",
+            "amount": "4",
+            "calories": "5",
+            "protein": "5",
+            "salts": "5",
+            "sugars": "5",
+            "fats": "5"
         },
         {
             "barcode": "000002",

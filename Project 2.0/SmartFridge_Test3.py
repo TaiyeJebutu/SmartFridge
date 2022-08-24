@@ -42,7 +42,7 @@ class Ui_MainWindow(object):
         self.Home = QtWidgets.QWidget()
         self.Home.setObjectName("Home")
         self.ViewInventory = QtWidgets.QPushButton(self.Home)
-        self.ViewInventory.setGeometry(QtCore.QRect(225, 260, 150, 150))
+        self.ViewInventory.setGeometry(QtCore.QRect(100, 260, 200, 150))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 128))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -112,11 +112,7 @@ class Ui_MainWindow(object):
         self.ViewInventory.setStyleSheet("background-color: rgb(162, 228, 184);\n"
 "color:rgb(0, 0, 128);")
         self.ViewInventory.setObjectName("ViewInventory")
-        self.AddItem = QtWidgets.QPushButton(self.Home)
-        self.AddItem.setGeometry(QtCore.QRect(50, 260, 150, 150))
-        self.AddItem.setStyleSheet("background-color: rgb(162, 228, 184);\n"
-"color:rgb(0, 0, 128);")
-        self.AddItem.setObjectName("AddItem")
+
         self.lcdNumber = QtWidgets.QLCDNumber(self.Home)
         self.lcdNumber.setGeometry(QtCore.QRect(55, 10, 320, 90))
         self.lcdNumber.setObjectName("lcdNumber")
@@ -746,8 +742,6 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.ViewInventory.setStatusTip(_translate("MainWindow", "View the inventory of items that are in your fridge"))
         self.ViewInventory.setText(_translate("MainWindow", "View Inventory"))
-        self.AddItem.setStatusTip(_translate("MainWindow", "Add an item to inventory"))
-        self.AddItem.setText(_translate("MainWindow", "Add an Item"))
         self.Date.setText(_translate("MainWindow", "TextLabel"))
         self.label_2.setText(_translate("MainWindow", "TextLabel"))
         self.ReturnHome.setText(_translate("MainWindow", "Click to return to the home screen"))

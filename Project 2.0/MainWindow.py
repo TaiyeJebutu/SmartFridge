@@ -14,7 +14,6 @@ class MainWindow:
         self.ui.stackedWidget.setCurrentWidget(self.ui.Home)
 
         self.ui.ViewInventory.clicked.connect(self.showInventory)
-        self.ui.AddItem.clicked.connect(self.showAddItem)
         self.ui.RemoveAnItem.clicked.connect(self.showAddItem)
         self.ui.EditAnItem.clicked.connect(self.showAddItem)
 
@@ -33,8 +32,6 @@ class MainWindow:
         self.ui.PreviousScreen.clicked.connect(self.showNoBarcode_Add)
         self.ui.Submit.clicked.connect(self.SaveAdd)
         self.ui.Submit_3.clicked.connect(self.searchDatabase)
-        #self.ui.RemoveAnItem.clicked.connect(self.showRemoveItem)
-        #self.ui.EditAnItem.clicked.connect(self.showEditItem)
         self.ui.WithBarcode.clicked.connect(self.showRemoveWithBarcode)
         self.ui.Submit_4.clicked.connect(self.RemoveBarcodeSearch)
         self.ui.Submit_5.clicked.connect(self.RemoveBarcode)
@@ -44,7 +41,7 @@ class MainWindow:
 
     def showInventory(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Inventory)
-        #self.ui.InventoryPageInventory()
+
 
     def showHome(self):
         self.clearAdd()
