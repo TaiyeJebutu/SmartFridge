@@ -134,7 +134,7 @@ class MainWindow:
         quantity = self.ui.QuantityInput.text()
         useByDate= self.ui.UseByDateInput.text()
         calories= self.ui.CaloriesInput.text()
-        proteins= self.ui.ProteinInput.text()
+        protein= self.ui.ProteinInput.text()
         salts= self.ui.SaltsInput.text()
         sugars= self.ui.SugarsInput.text()
         fats= self.ui.FatsInput.text()
@@ -144,7 +144,7 @@ class MainWindow:
             "item": item,
             "amount": quantity,
             "calories": calories,
-            "proteins": proteins,
+            "protein": protein,
             "salts": salts,
             "sugars": sugars,
             "fats": fats
