@@ -872,10 +872,10 @@ class Ui_MainWindow(object):
                 count += 1
         line = 30 + 19 * (count + 1)
         contents = re.sub('[{"}]', '', contents)
-        self.FrontPageInvent.setText(contents)
-        self.FrontPageInvent.setMinimumSize(QSize(850, line))
-        self.verticalLayout_2.addWidget(self.FrontPageInvent)
-        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+        self.Inventory_2.setText(contents)
+        self.Inventory_2.setMinimumSize(QSize(850, line))
+        self.verticalLayout.addWidget(self.Inventory_2)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
 if __name__ == "__main__":
     import sys

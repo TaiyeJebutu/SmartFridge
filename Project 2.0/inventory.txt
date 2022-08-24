@@ -53,12 +53,12 @@
         {
             "barcode": "000006",
             "item": "Oreo Biscuit",
-            "calories": "700",
             "amount": "7",
+            "calories": "700",
             "protein": "4",
-            "fats": "4",
+            "salts": "5",
             "sugars": "4",
-            "salts": "4"
+            "fats": "4"
         }
     ]
 }
