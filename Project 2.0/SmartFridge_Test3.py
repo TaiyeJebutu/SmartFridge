@@ -752,7 +752,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "TextLabel"))
         self.ReturnHome.setText(_translate("MainWindow", "Click to return to the home screen"))
         self.EditAnItem.setText(_translate("MainWindow", "Edit an Item"))
-        self.RemoveAnItem.setText(_translate("MainWindow", "Remove an Item"))
+        self.RemoveAnItem.setText(_translate("MainWindow", "Add/ Remove an Item"))
         self.ReturnHome_3.setText(_translate("MainWindow", "Click to return to the home screen"))
         self.WithBarcode_2.setStatusTip(_translate("MainWindow", "Choose when a Barcode is available"))
         self.WithBarcode_2.setText(_translate("MainWindow", "Barcode"))
