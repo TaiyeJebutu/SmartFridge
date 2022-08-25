@@ -213,7 +213,8 @@ class Ui_MainWindow(object):
         self.Add.setObjectName("Add")
         self.ReturnHome_3 = QtWidgets.QPushButton(self.Add)
         self.ReturnHome_3.setGeometry(QtCore.QRect(10, 290, 171, 101))
-        self.ReturnHome_3.setStyleSheet("background-color: rgb(0, 0, 0);color: rgb(0, 0, 128);")
+        self.ReturnHome_3.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.ReturnHome_3.setObjectName("ReturnHome_3")
         self.WithBarcode_2 = QtWidgets.QPushButton(self.Add)
         self.WithBarcode_2.setGeometry(QtCore.QRect(120, 50, 200, 150))
@@ -250,7 +251,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(16)
         self.WithBarcode_2.setFont(font)
-        self.WithBarcode_2.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.WithBarcode_2.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.WithBarcode_2.setObjectName("WithBarcode_2")
         self.WithoutBarcode_2 = QtWidgets.QPushButton(self.Add)
         self.WithoutBarcode_2.setGeometry(QtCore.QRect(480, 50, 200, 150))
@@ -286,7 +288,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(16)
         self.WithoutBarcode_2.setFont(font)
-        self.WithoutBarcode_2.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.WithoutBarcode_2.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.WithoutBarcode_2.setObjectName("WithoutBarcode_2")
         self.stackedWidget.addWidget(self.Add)
 
@@ -327,7 +330,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(16)
         self.WithBarcode.setFont(font)
-        self.WithBarcode.setStyleSheet("background-color: rgb(0, 0, 0);color: rgb(0, 0, 128);")
+        self.WithBarcode.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.WithBarcode.setObjectName("WithBarcode")
         self.WithoutBarcode = QtWidgets.QPushButton(self.Remove)
         self.WithoutBarcode.setGeometry(QtCore.QRect(480, 50, 200, 150))
@@ -363,11 +367,13 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(16)
         self.WithoutBarcode.setFont(font)
-        self.WithoutBarcode.setStyleSheet("background-color: rgb(0, 0, 0);")
+        self.WithoutBarcode.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.WithoutBarcode.setObjectName("WithoutBarcode")
         self.ReturnHome_2 = QtWidgets.QPushButton(self.Remove)
         self.ReturnHome_2.setGeometry(QtCore.QRect(10, 290, 171, 101))
-        self.ReturnHome_2.setStyleSheet("background-color: rgb(0, 0, 0);")
+        self.ReturnHome_2.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.ReturnHome_2.setObjectName("ReturnHome_2")
         self.stackedWidget.addWidget(self.Remove)
 
@@ -384,7 +390,8 @@ class Ui_MainWindow(object):
         self.InstructionLabel.setObjectName("InstructionLabel")
         self.BarcodeInput = QtWidgets.QLineEdit(self.Barcode_Add)
         self.BarcodeInput.setGeometry(QtCore.QRect(185, 130, 430, 81))
-        self.BarcodeInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.BarcodeInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.BarcodeInput.setObjectName("BarcodeInput")
         self.ReturnHome_9 = QtWidgets.QPushButton(self.Barcode_Add)
         self.ReturnHome_9.setGeometry(QtCore.QRect(50, 310, 171, 101))
@@ -406,25 +413,29 @@ class Ui_MainWindow(object):
         self.NoBarcode_Add.setObjectName("NoBarcode_Add")
         self.NameOfFoodInput = QtWidgets.QLineEdit(self.NoBarcode_Add)
         self.NameOfFoodInput.setGeometry(QtCore.QRect(280, 70, 431, 51))
-        self.NameOfFoodInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.NameOfFoodInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.NameOfFoodInput.setObjectName("NameOfFoodInput")
         self.NameOfFood = QtWidgets.QLabel(self.NoBarcode_Add)
         self.NameOfFood.setGeometry(QtCore.QRect(50, 70, 221, 51))
         font = QtGui.QFont()
         font.setPointSize(26)
         self.NameOfFood.setFont(font)
-        self.NameOfFood.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.NameOfFood.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.NameOfFood.setObjectName("NameOfFood")
         self.Quantity = QtWidgets.QLabel(self.NoBarcode_Add)
         self.Quantity.setGeometry(QtCore.QRect(50, 130, 221, 51))
         font = QtGui.QFont()
         font.setPointSize(26)
         self.Quantity.setFont(font)
-        self.Quantity.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.Quantity.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.Quantity.setObjectName("Quantity")
         self.QuantityInput = QtWidgets.QLineEdit(self.NoBarcode_Add)
         self.QuantityInput.setGeometry(QtCore.QRect(280, 130, 431, 51))
-        self.QuantityInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.QuantityInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.QuantityInput.setObjectName("QuantityInput")
         self.Calories = QtWidgets.QLabel(self.NoBarcode_Add)
         self.Calories.setGeometry(QtCore.QRect(50, 190, 221, 51))
@@ -433,27 +444,32 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(26)
         self.UseByDate.setFont(font)
-        self.UseByDate.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.UseByDate.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.UseByDate.setObjectName("UseByDate")
         self.UseByDateInput = QtWidgets.QLineEdit(self.NoBarcode_Add)
         self.UseByDateInput.setGeometry(QtCore.QRect(280, 190, 431, 51))
-        self.UseByDateInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.UseByDateInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.UseByDateInput.setObjectName("UseByDateInput")
         font = QtGui.QFont()
         font.setPointSize(12)
         self.Submit = QtWidgets.QPushButton(self.NoBarcode_Add)
         self.Submit.setGeometry(QtCore.QRect(280, 310, 431, 81))
         self.Submit.setFont(font)
-        self.Submit.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.Submit.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.Submit.setObjectName("Submit")
         self.ReturnHome_7 = QtWidgets.QPushButton(self.NoBarcode_Add)
         self.ReturnHome_7.setGeometry(QtCore.QRect(50, 310, 171, 101))
-        self.ReturnHome_7.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.ReturnHome_7.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.ReturnHome_7.setObjectName("ReturnHome_7")
         self.addNutritionalDataButton = QtWidgets.QPushButton(self.NoBarcode_Add)
         self.addNutritionalDataButton.setGeometry(QtCore.QRect(280, 250, 431, 51))
         self.addNutritionalDataButton.setFont(font)
-        self.addNutritionalDataButton.setStyleSheet("background-color: rgb(0, 0, 0);\n""color:rgb(0,0,128);")
+        self.addNutritionalDataButton.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.addNutritionalDataButton.setObjectName("addNutritionalDataButton")
         self.Barcode = QtWidgets.QLabel(self.NoBarcode_Add)
         self.Barcode.setGeometry(QtCore.QRect(50, 10, 221, 51))
@@ -468,7 +484,8 @@ class Ui_MainWindow(object):
         self.Barcode.setObjectName("Barcode")
         self.BarcodeInput_2 = QtWidgets.QLineEdit(self.NoBarcode_Add)
         self.BarcodeInput_2.setGeometry(QtCore.QRect(280, 10, 431, 51))
-        self.BarcodeInput_2.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.BarcodeInput_2.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.BarcodeInput_2.setObjectName("BarcodeInput_2")
         self.stackedWidget.addWidget(self.NoBarcode_Add)
 
@@ -504,7 +521,8 @@ class Ui_MainWindow(object):
         self.page.setObjectName("page")
         self.CaloriesInput = QtWidgets.QLineEdit(self.page)
         self.CaloriesInput.setGeometry(QtCore.QRect(280, 10, 431, 51))
-        self.CaloriesInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.CaloriesInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.CaloriesInput.setObjectName("CaloriesInput")
         self.Submit_2 = QtWidgets.QPushButton(self.page)
         self.Submit_2.setGeometry(QtCore.QRect(270, 370, 431, 41))
@@ -549,7 +567,8 @@ class Ui_MainWindow(object):
         self.Fats.setObjectName("Fats")
         self.FatsInput = QtWidgets.QLineEdit(self.page)
         self.FatsInput.setGeometry(QtCore.QRect(280, 130, 431, 51))
-        self.FatsInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.FatsInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.FatsInput.setObjectName("FatsInput")
         self.ReturnHome_8 = QtWidgets.QPushButton(self.page)
         self.ReturnHome_8.setGeometry(QtCore.QRect(50, 310, 171, 101))
@@ -558,7 +577,8 @@ class Ui_MainWindow(object):
         self.ReturnHome_8.setObjectName("ReturnHome_8")
         self.ProteinInput = QtWidgets.QLineEdit(self.page)
         self.ProteinInput.setGeometry(QtCore.QRect(280, 70, 431, 51))
-        self.ProteinInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.ProteinInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.ProteinInput.setObjectName("ProteinInput")
         self.Salts = QtWidgets.QLabel(self.page)
         self.Salts.setGeometry(QtCore.QRect(50, 250, 221, 51))
@@ -573,11 +593,13 @@ class Ui_MainWindow(object):
         self.Salts.setObjectName("Salts")
         self.SugarsInput = QtWidgets.QLineEdit(self.page)
         self.SugarsInput.setGeometry(QtCore.QRect(280, 190, 431, 51))
-        self.SugarsInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.SugarsInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.SugarsInput.setObjectName("SugarsInput")
         self.SaltsInput = QtWidgets.QLineEdit(self.page)
         self.SaltsInput.setGeometry(QtCore.QRect(280, 250, 431, 51))
-        self.SaltsInput.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.SaltsInput.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.SaltsInput.setObjectName("SaltsInput")
         self.Sugars = QtWidgets.QLabel(self.page)
         self.Sugars.setGeometry(QtCore.QRect(50, 190, 221, 51))
@@ -614,7 +636,8 @@ class Ui_MainWindow(object):
         self.Submit_4.setObjectName("Submit_4")
         self.BarcodeInput_3 = QtWidgets.QLineEdit(self.Barcode_Rem)
         self.BarcodeInput_3.setGeometry(QtCore.QRect(180, 110, 430, 41))
-        self.BarcodeInput_3.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.BarcodeInput_3.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.BarcodeInput_3.setObjectName("BarcodeInput_3")
         self.ReturnHome_10 = QtWidgets.QPushButton(self.Barcode_Rem)
         self.ReturnHome_10.setGeometry(QtCore.QRect(50, 310, 171, 101))
@@ -644,7 +667,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.RemoveCheck.setFont(font)
-        self.RemoveCheck.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.RemoveCheck.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.RemoveCheck.setFrameShape(QtWidgets.QFrame.Box)
         self.RemoveCheck.setFrameShadow(QtWidgets.QFrame.Plain)
         self.RemoveCheck.setAlignment(QtCore.Qt.AlignCenter)
@@ -675,7 +699,8 @@ class Ui_MainWindow(object):
         self.ReturnHome_11.setObjectName("ReturnHome_11")
         self.BarcodeInput_4 = QtWidgets.QLineEdit(self.NoBarcodeRemove)
         self.BarcodeInput_4.setGeometry(QtCore.QRect(180, 110, 430, 41))
-        self.BarcodeInput_4.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.BarcodeInput_4.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.BarcodeInput_4.setObjectName("BarcodeInput_4")
         self.Instruction_3 = QtWidgets.QLabel(self.NoBarcodeRemove)
         self.Instruction_3.setGeometry(QtCore.QRect(230, 210, 551, 41))
@@ -708,7 +733,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.RemoveCheck_2.setFont(font)
-        self.RemoveCheck_2.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.RemoveCheck_2.setStyleSheet("background-color: rgb(38, 38, 38);\n"
+"color:rgb(227, 225, 225);")
         self.RemoveCheck_2.setFrameShape(QtWidgets.QFrame.Box)
         self.RemoveCheck_2.setFrameShadow(QtWidgets.QFrame.Plain)
         self.RemoveCheck_2.setAlignment(QtCore.Qt.AlignCenter)
