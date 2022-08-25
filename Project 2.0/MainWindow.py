@@ -31,6 +31,8 @@ class MainWindow:
         self.ui.addNutritionalDataButton.clicked.connect(self.showNutrition)
         self.ui.PreviousScreen.clicked.connect(self.showNoBarcode_Add)
         self.ui.Submit.clicked.connect(self.SaveAdd)
+        self.ui.Submit_2.clicked.connect(self.SaveAdd)
+
         self.ui.Submit_3.clicked.connect(self.searchDatabase)
         self.ui.WithBarcode.clicked.connect(self.showRemoveWithBarcode)
         self.ui.Submit_4.clicked.connect(self.RemoveBarcodeSearch)
