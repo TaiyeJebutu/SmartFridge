@@ -58,7 +58,7 @@ class MainWindow:
         self.ui.stackedWidget.setCurrentWidget(self.ui.Remove)
 
     def showRemoveWithBarcode(self):
-        self.ui.stackedWidget.setCurrentWidget(self.ui.Barcode_Rem)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Barcode_Add)
 
     def showEditItem(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Edit)
@@ -156,55 +156,7 @@ class MainWindow:
         self.refreshInventory()
 
 
-        """if (self.ui.BarcodeInput_2.text != ""):
-            Barcode = self.ui.BarcodeInput_2.text()
-        else:
-            Barcode = ""
-        if (self.ui.NameOfFoodInput.text != ""):
-            Food = self.ui.NameOfFoodInput.text()
-        else:
-            Food = ""
-        if (self.ui.QuantityInput.text != ""):
-            Quantity = self.ui.QuantityInput.text()
-        else:
-            Quantity = ""
-        if (self.ui.UseByDateInput.text != ""):
-            UseByDate = self.ui.UseByDateInput.text()
-        else:
-            UseByDate = ""
-        if (self.ui.CaloriesInput.text != ""):
-            Calories = self.ui.CaloriesInput.text()
-        else:
-            Calories = ""
-        if (self.ui.ProteinInput.text != ""):
-            Protein = self.ui.ProteinInput.text()
-        else:
-            Protein = ""
-        if (self.ui.SaltsInput.text != ""):
-            Salts = self.ui.SaltsInput.text()
-        else:
-            Salts = ""
-        if (self.ui.SugarsInput.text != ""):
-            Sugars = self.ui.SugarsInput.text()
-        else:
-            Sugars = ""
-        if (self.ui.FatsInput.text != ""):
-            Fats = self.ui.FatsInput.text()
-        else:
-            Fats = ""
 
-        f = open("InventoryDatabase.txt", "a")
-
-        f.write("Barcode: " + Barcode + " | Item: " + Food + " | Amount: " + Quantity +
-                " | Calories: " + Calories +
-                " | Protein: " + Protein +
-                " | Fats: " + Fats +
-                " | Sugars: " + Sugars +
-                " | Salts: " + Salts )
-
-        f.close()
-        self.clearAdd()
-        self.refreshInventory()"""
 
     def clearAdd(self):
         self.ui.BarcodeInput_2.setText("")

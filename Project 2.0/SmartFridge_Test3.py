@@ -455,7 +455,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.Submit = QtWidgets.QPushButton(self.NoBarcode_Add)
-        self.Submit.setGeometry(QtCore.QRect(280, 310, 431, 81))
+        self.Submit.setGeometry(QtCore.QRect(640, 310, 150, 40))
         self.Submit.setFont(font)
         self.Submit.setStyleSheet("background-color: rgb(38, 38, 38);\n"
 "color:rgb(227, 225, 225);")
@@ -466,7 +466,7 @@ class Ui_MainWindow(object):
 "color:rgb(227, 225, 225);")
         self.ReturnHome_7.setObjectName("ReturnHome_7")
         self.addNutritionalDataButton = QtWidgets.QPushButton(self.NoBarcode_Add)
-        self.addNutritionalDataButton.setGeometry(QtCore.QRect(280, 250, 431, 51))
+        self.addNutritionalDataButton.setGeometry(QtCore.QRect(640, 250, 150, 51))
         self.addNutritionalDataButton.setFont(font)
         self.addNutritionalDataButton.setStyleSheet("background-color: rgb(38, 38, 38);\n"
 "color:rgb(227, 225, 225);")
@@ -525,7 +525,7 @@ class Ui_MainWindow(object):
 "color:rgb(227, 225, 225);")
         self.CaloriesInput.setObjectName("CaloriesInput")
         self.Submit_2 = QtWidgets.QPushButton(self.page)
-        self.Submit_2.setGeometry(QtCore.QRect(270, 370, 431, 41))
+        self.Submit_2.setGeometry(QtCore.QRect(640, 355, 150, 40))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.Submit_2.setFont(font)
@@ -613,7 +613,7 @@ class Ui_MainWindow(object):
 "color:rgb(227, 225, 225);")
         self.Sugars.setObjectName("Sugars")
         self.PreviousScreen = QtWidgets.QPushButton(self.page)
-        self.PreviousScreen.setGeometry(QtCore.QRect(270, 310, 431, 41))
+        self.PreviousScreen.setGeometry(QtCore.QRect(640, 310, 150, 40))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.PreviousScreen.setFont(font)
@@ -760,11 +760,502 @@ class Ui_MainWindow(object):
         '''self.menuDevloper_Settings.addAction(self.actionMaintanace)
         self.menubar.addAction(self.menuDevloper_Settings.menuAction())'''
 
+#region Barcode Buttons creation
+        self.button0Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button0Barcode.setGeometry(QtCore.QRect(230, 360, 25, 25))
+        self.button0Barcode.setPalette(palette)
+        self.button0Barcode.setFont(font)
+        self.button0Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button0Barcode.setObjectName("button0Barcode")
+
+        self.button1Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button1Barcode.setGeometry(QtCore.QRect(256, 360, 25, 25))
+        self.button1Barcode.setPalette(palette)
+        self.button1Barcode.setFont(font)
+        self.button1Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button1Barcode.setObjectName("button1Barcode")
+
+        self.button2Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button2Barcode.setGeometry(QtCore.QRect(282, 360, 25, 25))
+        self.button2Barcode.setPalette(palette)
+        self.button2Barcode.setFont(font)
+        self.button2Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button2Barcode.setObjectName("button2Barcode")
+
+        self.button3Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button3Barcode.setGeometry(QtCore.QRect(308, 360, 25, 25))
+        self.button3Barcode.setPalette(palette)
+        self.button3Barcode.setFont(font)
+        self.button3Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button3Barcode.setObjectName("button3Barcode")
+
+        self.button4Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button4Barcode.setGeometry(QtCore.QRect(334, 360, 25, 25))
+        self.button4Barcode.setPalette(palette)
+        self.button4Barcode.setFont(font)
+        self.button4Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button4Barcode.setObjectName("button4Barcode")
+
+        self.button5Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button5Barcode.setGeometry(QtCore.QRect(360, 360, 25, 25))
+        self.button5Barcode.setPalette(palette)
+        self.button5Barcode.setFont(font)
+        self.button5Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button5Barcode.setObjectName("button5Barcode")
+
+        self.button6Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button6Barcode.setGeometry(QtCore.QRect(386, 360, 25, 25))
+        self.button6Barcode.setPalette(palette)
+        self.button6Barcode.setFont(font)
+        self.button6Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button6Barcode.setObjectName("button6Barcode")
+
+        self.button7Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button7Barcode.setGeometry(QtCore.QRect(412, 360, 25, 25))
+        self.button7Barcode.setPalette(palette)
+        self.button7Barcode.setFont(font)
+        self.button7Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button7Barcode.setObjectName("button7Barcode")
+
+        self.button8Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button8Barcode.setGeometry(QtCore.QRect(438, 360, 25, 25))
+        self.button8Barcode.setPalette(palette)
+        self.button8Barcode.setFont(font)
+        self.button8Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button8Barcode.setObjectName("button8Barcode")
+
+        self.button9Barcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.button9Barcode.setGeometry(QtCore.QRect(464, 360, 25, 25))
+        self.button9Barcode.setPalette(palette)
+        self.button9Barcode.setFont(font)
+        self.button9Barcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button9Barcode.setObjectName("button9Barcode")
+
+        self.buttonSelectBarcodeOnBarcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.buttonSelectBarcodeOnBarcode.setGeometry(QtCore.QRect(630, 155, 75, 30))
+        self.buttonSelectBarcodeOnBarcode.setPalette(palette)
+        self.buttonSelectBarcodeOnBarcode.setFont(font)
+        self.buttonSelectBarcodeOnBarcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectBarcodeOnBarcode.setObjectName("buttonSelectBarcodeOnBarcode")
+
+#endregion
+#region button edit page
+
+        self.buttonSelectBarcodeOnEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonSelectBarcodeOnEdit.setGeometry(QtCore.QRect(715, 20, 75, 30))
+        self.buttonSelectBarcodeOnEdit.setPalette(palette)
+        self.buttonSelectBarcodeOnEdit.setFont(font)
+        self.buttonSelectBarcodeOnEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectBarcodeOnEdit.setObjectName("buttonSelectBarcodeOnEdit")
+
+        self.buttonSelectNameOnEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonSelectNameOnEdit.setGeometry(QtCore.QRect(715, 80, 75, 30))
+        self.buttonSelectNameOnEdit.setPalette(palette)
+        self.buttonSelectNameOnEdit.setFont(font)
+        self.buttonSelectNameOnEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectNameOnEdit.setObjectName("buttonSelectNameOnEdit")
+
+        self.buttonSelectAmountOnEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonSelectAmountOnEdit.setGeometry(QtCore.QRect(715, 140, 75, 30))
+        self.buttonSelectAmountOnEdit.setPalette(palette)
+        self.buttonSelectAmountOnEdit.setFont(font)
+        self.buttonSelectAmountOnEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectAmountOnEdit.setObjectName("buttonSelectAmountOnEdit")
+
+        self.buttonSelectUseByDateOnEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonSelectUseByDateOnEdit.setGeometry(QtCore.QRect(715, 200, 75, 30))
+        self.buttonSelectUseByDateOnEdit.setPalette(palette)
+        self.buttonSelectUseByDateOnEdit.setFont(font)
+        self.buttonSelectUseByDateOnEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectUseByDateOnEdit.setObjectName("buttonSelectUseByDateOnEdit")
+
+
+#region keyboard Edit page
+        #region numbers
+        self.button1Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button1Edit.setGeometry(QtCore.QRect(250, 280, 25, 25))
+        self.button1Edit.setPalette(palette)
+        self.button1Edit.setFont(font)
+        self.button1Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button1Edit.setObjectName("button1Edit")
+
+        self.button2Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button2Edit.setGeometry(QtCore.QRect(280, 280, 25, 25))
+        self.button2Edit.setPalette(palette)
+        self.button2Edit.setFont(font)
+        self.button2Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button2Edit.setObjectName("button2Edit")
+
+        self.button3Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button3Edit.setGeometry(QtCore.QRect(310, 280, 25, 25))
+        self.button3Edit.setPalette(palette)
+        self.button3Edit.setFont(font)
+        self.button3Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button3Edit.setObjectName("button3Edit")
+
+        self.button4Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button4Edit.setGeometry(QtCore.QRect(340, 280, 25, 25))
+        self.button4Edit.setPalette(palette)
+        self.button4Edit.setFont(font)
+        self.button4Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button4Edit.setObjectName("button4Edit")
+
+        self.button5Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button5Edit.setGeometry(QtCore.QRect(370, 280, 25, 25))
+        self.button5Edit.setPalette(palette)
+        self.button5Edit.setFont(font)
+        self.button5Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button5Edit.setObjectName("button5Edit")
+
+        self.button6Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button6Edit.setGeometry(QtCore.QRect(400, 280, 25, 25))
+        self.button6Edit.setPalette(palette)
+        self.button6Edit.setFont(font)
+        self.button6Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button6Edit.setObjectName("button6Edit")
+
+        self.button7Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button7Edit.setGeometry(QtCore.QRect(430, 280, 25, 25))
+        self.button7Edit.setPalette(palette)
+        self.button7Edit.setFont(font)
+        self.button7Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button7Edit.setObjectName("button7Edit")
+
+        self.button8Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button8Edit.setGeometry(QtCore.QRect(460, 280, 25, 25))
+        self.button8Edit.setPalette(palette)
+        self.button8Edit.setFont(font)
+        self.button8Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button8Edit.setObjectName("button8Edit")
+
+        self.button9Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button9Edit.setGeometry(QtCore.QRect(490, 280, 25, 25))
+        self.button9Edit.setPalette(palette)
+        self.button9Edit.setFont(font)
+        self.button9Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button9Edit.setObjectName("button9Edit")
+
+        self.button0Edit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.button0Edit.setGeometry(QtCore.QRect(520, 280, 25, 25))
+        self.button0Edit.setPalette(palette)
+        self.button0Edit.setFont(font)
+        self.button0Edit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button0Edit.setObjectName("button0Edit")
+        #endregion
+
+        #region alpha Row 1
+        self.buttonQEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonQEdit.setGeometry(QtCore.QRect(250, 310, 25, 25))
+        self.buttonQEdit.setPalette(palette)
+        self.buttonQEdit.setFont(font)
+        self.buttonQEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonQEdit.setObjectName("buttonQEdit")
+
+        self.buttonWEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonWEdit.setGeometry(QtCore.QRect(280, 310, 25, 25))
+        self.buttonWEdit.setPalette(palette)
+        self.buttonWEdit.setFont(font)
+        self.buttonWEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonWEdit.setObjectName("buttonWEdit")
+
+        self.buttonEEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonEEdit.setGeometry(QtCore.QRect(310, 310, 25, 25))
+        self.buttonEEdit.setPalette(palette)
+        self.buttonEEdit.setFont(font)
+        self.buttonEEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonEEdit.setObjectName("buttonEEdit")
+
+        self.buttonREdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonREdit.setGeometry(QtCore.QRect(340, 310, 25, 25))
+        self.buttonREdit.setPalette(palette)
+        self.buttonREdit.setFont(font)
+        self.buttonREdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonREdit.setObjectName("buttonREdit")
+
+        self.buttonTEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonTEdit.setGeometry(QtCore.QRect(370, 310, 25, 25))
+        self.buttonTEdit.setPalette(palette)
+        self.buttonTEdit.setFont(font)
+        self.buttonTEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonTEdit.setObjectName("buttonTEdit")
+
+        self.buttonYEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonYEdit.setGeometry(QtCore.QRect(400, 310, 25, 25))
+        self.buttonYEdit.setPalette(palette)
+        self.buttonYEdit.setFont(font)
+        self.buttonYEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonYEdit.setObjectName("buttonYEdit")
+
+        self.buttonUEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonUEdit.setGeometry(QtCore.QRect(430, 310, 25, 25))
+        self.buttonUEdit.setPalette(palette)
+        self.buttonUEdit.setFont(font)
+        self.buttonUEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonUEdit.setObjectName("buttonUEdit")
+
+        self.buttonIEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonIEdit.setGeometry(QtCore.QRect(460, 310, 25, 25))
+        self.buttonIEdit.setPalette(palette)
+        self.buttonIEdit.setFont(font)
+        self.buttonIEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonIEdit.setObjectName("buttonIEdit")
+
+        self.buttonOEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonOEdit.setGeometry(QtCore.QRect(490, 310, 25, 25))
+        self.buttonOEdit.setPalette(palette)
+        self.buttonOEdit.setFont(font)
+        self.buttonOEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonOEdit.setObjectName("buttonOEdit")
+
+        self.buttonPEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonPEdit.setGeometry(QtCore.QRect(520, 310, 25, 25))
+        self.buttonPEdit.setPalette(palette)
+        self.buttonPEdit.setFont(font)
+        self.buttonPEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonPEdit.setObjectName("buttonPEdit")
+        #endregion
+        # region alpha Row 2
+        self.buttonAEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonAEdit.setGeometry(QtCore.QRect(265, 340, 25, 25))
+        self.buttonAEdit.setPalette(palette)
+        self.buttonAEdit.setFont(font)
+        self.buttonAEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonAEdit.setObjectName("buttonAEdit")
+
+        self.buttonSEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonSEdit.setGeometry(QtCore.QRect(295, 340, 25, 25))
+        self.buttonSEdit.setPalette(palette)
+        self.buttonSEdit.setFont(font)
+        self.buttonSEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSEdit.setObjectName("buttonSEdit")
+
+        self.buttonDEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonDEdit.setGeometry(QtCore.QRect(325, 340, 25, 25))
+        self.buttonDEdit.setPalette(palette)
+        self.buttonDEdit.setFont(font)
+        self.buttonDEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonDEdit.setObjectName("buttonDEdit")
+
+        self.buttonFEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonFEdit.setGeometry(QtCore.QRect(355, 340, 25, 25))
+        self.buttonFEdit.setPalette(palette)
+        self.buttonFEdit.setFont(font)
+        self.buttonFEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonFEdit.setObjectName("buttonFEdit")
+
+        self.buttonGEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonGEdit.setGeometry(QtCore.QRect(385, 340, 25, 25))
+        self.buttonGEdit.setPalette(palette)
+        self.buttonGEdit.setFont(font)
+        self.buttonGEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonGEdit.setObjectName("buttonGEdit")
+
+        self.buttonHEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonHEdit.setGeometry(QtCore.QRect(415, 340, 25, 25))
+        self.buttonHEdit.setPalette(palette)
+        self.buttonHEdit.setFont(font)
+        self.buttonHEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonHEdit.setObjectName("buttonHEdit")
+
+        self.buttonJEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonJEdit.setGeometry(QtCore.QRect(445, 340, 25, 25))
+        self.buttonJEdit.setPalette(palette)
+        self.buttonJEdit.setFont(font)
+        self.buttonJEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonJEdit.setObjectName("buttonJEdit")
+
+        self.buttonKEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonKEdit.setGeometry(QtCore.QRect(475, 340, 25, 25))
+        self.buttonKEdit.setPalette(palette)
+        self.buttonKEdit.setFont(font)
+        self.buttonKEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonKEdit.setObjectName("buttonKEdit")
+
+        self.buttonLEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonLEdit.setGeometry(QtCore.QRect(505, 340, 25, 25))
+        self.buttonLEdit.setPalette(palette)
+        self.buttonLEdit.setFont(font)
+        self.buttonLEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonLEdit.setObjectName("buttonLEdit")
+        # endregion
+        # region alpha Row 3
+        self.buttonZEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonZEdit.setGeometry(QtCore.QRect(280, 370, 25, 25))
+        self.buttonZEdit.setPalette(palette)
+        self.buttonZEdit.setFont(font)
+        self.buttonZEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonZEdit.setObjectName("buttonZEdit")
+
+        self.buttonXEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonXEdit.setGeometry(QtCore.QRect(310, 370, 25, 25))
+        self.buttonXEdit.setPalette(palette)
+        self.buttonXEdit.setFont(font)
+        self.buttonXEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonXEdit.setObjectName("buttonXEdit")
+
+        self.buttonCEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonCEdit.setGeometry(QtCore.QRect(340, 370, 25, 25))
+        self.buttonCEdit.setPalette(palette)
+        self.buttonCEdit.setFont(font)
+        self.buttonCEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonCEdit.setObjectName("buttonCEdit")
+
+        self.buttonVEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonVEdit.setGeometry(QtCore.QRect(370, 370, 25, 25))
+        self.buttonVEdit.setPalette(palette)
+        self.buttonVEdit.setFont(font)
+        self.buttonVEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonVEdit.setObjectName("buttonVEdit")
+
+        self.buttonBEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonBEdit.setGeometry(QtCore.QRect(400, 370, 25, 25))
+        self.buttonBEdit.setPalette(palette)
+        self.buttonBEdit.setFont(font)
+        self.buttonBEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonBEdit.setObjectName("buttonBEdit")
+
+        self.buttonNEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonNEdit.setGeometry(QtCore.QRect(430, 370, 25, 25))
+        self.buttonNEdit.setPalette(palette)
+        self.buttonNEdit.setFont(font)
+        self.buttonNEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonNEdit.setObjectName("buttonNEdit")
+
+        self.buttonMEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonMEdit.setGeometry(QtCore.QRect(460, 370, 25, 25))
+        self.buttonMEdit.setPalette(palette)
+        self.buttonMEdit.setFont(font)
+        self.buttonMEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonMEdit.setObjectName("buttonMEdit")
+
+        self.buttonSlashEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonSlashEdit.setGeometry(QtCore.QRect(490, 370, 25, 25))
+        self.buttonSlashEdit.setPalette(palette)
+        self.buttonSlashEdit.setFont(font)
+        self.buttonSlashEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSlashEdit.setObjectName("buttonSlashEdit")
+        # endregion
+#endregion
+
+#endregion
+#region button for nutritional page
+
+        self.buttonSelectCaloriesOnPage = QtWidgets.QPushButton(self.page)
+        self.buttonSelectCaloriesOnPage.setGeometry(QtCore.QRect(715, 20, 75, 30))
+        self.buttonSelectCaloriesOnPage.setPalette(palette)
+        self.buttonSelectCaloriesOnPage.setFont(font)
+        self.buttonSelectCaloriesOnPage.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectCaloriesOnPage.setObjectName("buttonSelectCaloriesOnPage")
+
+        self.buttonSelectProteinOnPage = QtWidgets.QPushButton(self.page)
+        self.buttonSelectProteinOnPage.setGeometry(QtCore.QRect(715, 80, 75, 30))
+        self.buttonSelectProteinOnPage.setPalette(palette)
+        self.buttonSelectProteinOnPage.setFont(font)
+        self.buttonSelectProteinOnPage.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectProteinOnPage.setObjectName("buttonSelectProteinOnPage")
+
+        self.buttonSelectFatsOnPage = QtWidgets.QPushButton(self.page)
+        self.buttonSelectFatsOnPage.setGeometry(QtCore.QRect(715, 140, 75, 30))
+        self.buttonSelectFatsOnPage.setPalette(palette)
+        self.buttonSelectFatsOnPage.setFont(font)
+        self.buttonSelectFatsOnPage.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectFatsOnPage.setObjectName("buttonSelectFatsOnPage")
+
+        self.buttonSelectSugarsOnPage = QtWidgets.QPushButton(self.page)
+        self.buttonSelectSugarsOnPage.setGeometry(QtCore.QRect(715, 200, 75, 30))
+        self.buttonSelectSugarsOnPage.setPalette(palette)
+        self.buttonSelectSugarsOnPage.setFont(font)
+        self.buttonSelectSugarsOnPage.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectSugarsOnPage.setObjectName("buttonSelectSugarsOnPage")
+
+        self.buttonSelectSaltsOnPage = QtWidgets.QPushButton(self.page)
+        self.buttonSelectSaltsOnPage.setGeometry(QtCore.QRect(715, 260, 75, 30))
+        self.buttonSelectSaltsOnPage.setPalette(palette)
+        self.buttonSelectSaltsOnPage.setFont(font)
+        self.buttonSelectSaltsOnPage.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonSelectSaltsOnPage.setObjectName("buttonSelectSaltsOnPage")
+
+        #region numbers
+        self.button1Page = QtWidgets.QPushButton(self.page)
+        self.button1Page.setGeometry(QtCore.QRect(250, 320, 25, 25))
+        self.button1Page.setPalette(palette)
+        self.button1Page.setFont(font)
+        self.button1Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button1Page.setObjectName("button1Page")
+
+        self.button2Page = QtWidgets.QPushButton(self.page)
+        self.button2Page.setGeometry(QtCore.QRect(280, 320, 25, 25))
+        self.button2Page.setPalette(palette)
+        self.button2Page.setFont(font)
+        self.button2Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button2Page.setObjectName("button2Page")
+
+        self.button3Page = QtWidgets.QPushButton(self.page)
+        self.button3Page.setGeometry(QtCore.QRect(310, 320, 25, 25))
+        self.button3Page.setPalette(palette)
+        self.button3Page.setFont(font)
+        self.button3Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button3Page.setObjectName("button3Page")
+
+        self.button4Page = QtWidgets.QPushButton(self.page)
+        self.button4Page.setGeometry(QtCore.QRect(340, 320, 25, 25))
+        self.button4Page.setPalette(palette)
+        self.button4Page.setFont(font)
+        self.button4Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button4Page.setObjectName("button4Page")
+
+        self.button5Page = QtWidgets.QPushButton(self.page)
+        self.button5Page.setGeometry(QtCore.QRect(370, 320, 25, 25))
+        self.button5Page.setPalette(palette)
+        self.button5Page.setFont(font)
+        self.button5Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button5Page.setObjectName("button5Page")
+
+        self.button6Page = QtWidgets.QPushButton(self.page)
+        self.button6Page.setGeometry(QtCore.QRect(400, 320, 25, 25))
+        self.button6Page.setPalette(palette)
+        self.button6Page.setFont(font)
+        self.button6Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button6Page.setObjectName("button6Page")
+
+        self.button7Page = QtWidgets.QPushButton(self.page)
+        self.button7Page.setGeometry(QtCore.QRect(430, 320, 25, 25))
+        self.button7Page.setPalette(palette)
+        self.button7Page.setFont(font)
+        self.button7Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button7Page.setObjectName("button7Page")
+
+        self.button8Page = QtWidgets.QPushButton(self.page)
+        self.button8Page.setGeometry(QtCore.QRect(460, 320, 25, 25))
+        self.button8Page.setPalette(palette)
+        self.button8Page.setFont(font)
+        self.button8Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button8Page.setObjectName("button8Page")
+
+        self.button9Page = QtWidgets.QPushButton(self.page)
+        self.button9Page.setGeometry(QtCore.QRect(490, 320, 25, 25))
+        self.button9Page.setPalette(palette)
+        self.button9Page.setFont(font)
+        self.button9Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button9Page.setObjectName("button9Page")
+
+        self.button0Page = QtWidgets.QPushButton(self.page)
+        self.button0Page.setGeometry(QtCore.QRect(520, 320, 25, 25))
+        self.button0Page.setPalette(palette)
+        self.button0Page.setFont(font)
+        self.button0Page.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.button0Page.setObjectName("button0Page")
+        #endregion
+
+
+#endregion
+
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
+#region original translate
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.ViewInventory.setStatusTip(_translate("MainWindow", "View the inventory of items that are in your fridge"))
@@ -786,22 +1277,22 @@ class Ui_MainWindow(object):
         self.ReturnHome_2.setText(_translate("MainWindow", "Click to return to the home screen"))
         self.InstructionLabel.setText(_translate("MainWindow", "Please click the text box and then scan your item"))
         self.ReturnHome_9.setText(_translate("MainWindow", "Click to return to the home screen"))
-        self.Submit_3.setText(_translate("MainWindow", "Click to submit the details"))
+        self.Submit_3.setText(_translate("MainWindow", "Submit Details"))
         self.NameOfFood.setText(_translate("MainWindow", "Name of Food"))
         self.Quantity.setText(_translate("MainWindow", "Quantity"))
         self.UseByDate.setText(_translate("MainWindow", "Use by date"))
-        self.Submit.setText(_translate("MainWindow", "Click to submit the details"))
+        self.Submit.setText(_translate("MainWindow", "Submit Details"))
         self.ReturnHome_7.setText(_translate("MainWindow", "Click to return to the home screen"))
-        self.addNutritionalDataButton.setText(_translate("MainWindow", "Click to add nutritional Information"))
+        self.addNutritionalDataButton.setText(_translate("MainWindow", "Nutritional Info"))
         self.Barcode.setText(_translate("MainWindow", "Barcode"))
-        self.Submit_2.setText(_translate("MainWindow", "Click to submit the details"))
+        self.Submit_2.setText(_translate("MainWindow", "Submit Details"))
         self.Protein.setText(_translate("MainWindow", "Protein"))
         self.Calories.setText(_translate("MainWindow", "Calories"))
         self.Fats.setText(_translate("MainWindow", "Fats"))
         self.ReturnHome_8.setText(_translate("MainWindow", "Click to return to the home screen"))
         self.Salts.setText(_translate("MainWindow", "Salts"))
         self.Sugars.setText(_translate("MainWindow", "Sugars"))
-        self.PreviousScreen.setText(_translate("MainWindow", "Click to return to previous screen"))
+        self.PreviousScreen.setText(_translate("MainWindow", "Go Back"))
         self.Submit_4.setText(_translate("MainWindow", "Click to check details"))
         self.ReturnHome_10.setText(_translate("MainWindow", "Click to return to the home screen"))
         self.Instruction.setText(_translate("MainWindow", "Please click the text box and then scan your item"))
@@ -818,6 +1309,89 @@ class Ui_MainWindow(object):
         '''self.menuDevloper_Settings.setTitle(_translate("MainWindow", "Devloper Settings"))'''
         self.actionMaintanace.setText(_translate("MainWindow", "Maintanace"))
         self.actionMaintanace.setShortcut(_translate("MainWindow", "Ctrl+Alt+Shift+Del"))
+#endregion
+#region Translate barcode buttons
+        self.button0Barcode.setText(_translate("MainWindow", "0"))
+        self.button1Barcode.setText(_translate("MainWindow", "1"))
+        self.button2Barcode.setText(_translate("MainWindow", "2"))
+        self.button3Barcode.setText(_translate("MainWindow", "3"))
+        self.button4Barcode.setText(_translate("MainWindow", "4"))
+        self.button5Barcode.setText(_translate("MainWindow", "5"))
+        self.button6Barcode.setText(_translate("MainWindow", "6"))
+        self.button7Barcode.setText(_translate("MainWindow", "7"))
+        self.button8Barcode.setText(_translate("MainWindow", "8"))
+        self.button9Barcode.setText(_translate("MainWindow", "9"))
+        self.buttonSelectBarcodeOnBarcode.setText(_translate("MainWindow", "Select"))
+#endregion
+#region Translate edit buttons
+        self.buttonSelectBarcodeOnEdit.setText((_translate("MainWindow", "Select")))
+        self.buttonSelectNameOnEdit.setText((_translate("MainWindow", "Select")))
+        self.buttonSelectAmountOnEdit.setText((_translate("MainWindow", "Select")))
+        self.buttonSelectUseByDateOnEdit.setText((_translate("MainWindow", "Select")))
+#endregion
+#region Translate nutritional buttons
+        self.buttonSelectCaloriesOnPage.setText((_translate("MainWindow", "Select")))
+        self.buttonSelectProteinOnPage.setText((_translate("MainWindow", "Select")))
+        self.buttonSelectFatsOnPage.setText((_translate("MainWindow", "Select")))
+        self.buttonSelectSugarsOnPage.setText((_translate("MainWindow", "Select")))
+        self.buttonSelectSaltsOnPage.setText((_translate("MainWindow", "Select")))
+
+        self.button1Page.setText(_translate("MainWindow", "1"))
+        self.button2Page.setText(_translate("MainWindow", "2"))
+        self.button3Page.setText(_translate("MainWindow", "3"))
+        self.button4Page.setText(_translate("MainWindow", "4"))
+        self.button5Page.setText(_translate("MainWindow", "5"))
+        self.button6Page.setText(_translate("MainWindow", "6"))
+        self.button7Page.setText(_translate("MainWindow", "7"))
+        self.button8Page.setText(_translate("MainWindow", "8"))
+        self.button9Page.setText(_translate("MainWindow", "9"))
+        self.button0Page.setText(_translate("MainWindow", "0"))
+#endregion
+#region Translate Keyboard Edit page
+        self.button1Edit.setText(_translate("MainWindow", "1"))
+        self.button2Edit.setText(_translate("MainWindow", "2"))
+        self.button3Edit.setText(_translate("MainWindow", "3"))
+        self.button4Edit.setText(_translate("MainWindow", "4"))
+        self.button5Edit.setText(_translate("MainWindow", "5"))
+        self.button6Edit.setText(_translate("MainWindow", "6"))
+        self.button7Edit.setText(_translate("MainWindow", "7"))
+        self.button8Edit.setText(_translate("MainWindow", "8"))
+        self.button9Edit.setText(_translate("MainWindow", "9"))
+        self.button0Edit.setText(_translate("MainWindow", "0"))
+
+        self.buttonQEdit.setText(_translate("MainWindow", "Q"))
+        self.buttonWEdit.setText(_translate("MainWindow", "W"))
+        self.buttonEEdit.setText(_translate("MainWindow", "E"))
+        self.buttonREdit.setText(_translate("MainWindow", "R"))
+        self.buttonTEdit.setText(_translate("MainWindow", "T"))
+        self.buttonYEdit.setText(_translate("MainWindow", "Y"))
+        self.buttonUEdit.setText(_translate("MainWindow", "U"))
+        self.buttonIEdit.setText(_translate("MainWindow", "I"))
+        self.buttonOEdit.setText(_translate("MainWindow", "O"))
+        self.buttonPEdit.setText(_translate("MainWindow", "P"))
+
+        self.buttonAEdit.setText(_translate("MainWindow", "A"))
+        self.buttonSEdit.setText(_translate("MainWindow", "S"))
+        self.buttonDEdit.setText(_translate("MainWindow", "D"))
+        self.buttonFEdit.setText(_translate("MainWindow", "F"))
+        self.buttonGEdit.setText(_translate("MainWindow", "G"))
+        self.buttonHEdit.setText(_translate("MainWindow", "H"))
+        self.buttonJEdit.setText(_translate("MainWindow", "J"))
+        self.buttonKEdit.setText(_translate("MainWindow", "K"))
+        self.buttonLEdit.setText(_translate("MainWindow", "L"))
+
+        self.buttonZEdit.setText(_translate("MainWindow", "Z"))
+        self.buttonXEdit.setText(_translate("MainWindow", "X"))
+        self.buttonCEdit.setText(_translate("MainWindow", "C"))
+        self.buttonVEdit.setText(_translate("MainWindow", "V"))
+        self.buttonBEdit.setText(_translate("MainWindow", "B"))
+        self.buttonNEdit.setText(_translate("MainWindow", "N"))
+        self.buttonMEdit.setText(_translate("MainWindow", "M"))
+        self.buttonSlashEdit.setText(_translate("MainWindow", "/"))
+
+
+#endregion
+
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.Clock)
@@ -825,6 +1399,18 @@ class Ui_MainWindow(object):
         self.Clock()
 
         self.Weather()
+
+
+
+
+
+
+
+
+
+
+
+
 
     def Clock(self):
         time = datetime.now()
