@@ -5,20 +5,22 @@ import time
 from SmartFridge_Test3 import Ui_MainWindow
 from inventoryManager import dataBase
 
+
 class MainWindow:
+
     def __init__(self):
+
+        self.selectedTextBox = None
         self.Main_win = QMainWindow()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self.Main_win)
 
-        self.ui.stackedWidget.setCurrentWidget(self.ui.Home)
 
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Home)
+        # region original connect
         self.ui.ViewInventory.clicked.connect(self.showInventory)
         self.ui.RemoveAnItem.clicked.connect(self.showAddItem)
         self.ui.EditAnItem.clicked.connect(self.showAddItem)
-
-
-
         self.ui.ReturnHome.clicked.connect(self.showHome)
         self.ui.ReturnHome_2.clicked.connect(self.showHome)
         self.ui.ReturnHome_3.clicked.connect(self.showHome)
@@ -32,18 +34,131 @@ class MainWindow:
         self.ui.PreviousScreen.clicked.connect(self.showNoBarcode_Add)
         self.ui.Submit.clicked.connect(self.SaveAdd)
         self.ui.Submit_2.clicked.connect(self.SaveAdd)
-
         self.ui.Submit_3.clicked.connect(self.searchDatabase)
         self.ui.WithBarcode.clicked.connect(self.showRemoveWithBarcode)
         self.ui.Submit_4.clicked.connect(self.RemoveBarcodeSearch)
         self.ui.Submit_5.clicked.connect(self.RemoveBarcode)
+        # endregion
+        # region new connects
+        self.ui.buttonSelectBarcodeOnEdit.clicked.connect(lambda: self.selectATextBox("EditBarcode"))
+        self.ui.buttonSelectNameOnEdit.clicked.connect(lambda: self.selectATextBox("EditName"))
+        self.ui.buttonSelectAmountOnEdit.clicked.connect(lambda: self.selectATextBox("EditAmount"))
+        self.ui.buttonSelectUseByDateOnEdit.clicked.connect(lambda: self.selectATextBox("EditUseByDate"))
+        self.ui.buttonSelectCaloriesOnPage.clicked.connect(lambda: self.selectATextBox("EditCalories"))
+        self.ui.buttonSelectFatsOnPage.clicked.connect(lambda: self.selectATextBox("EditFats"))
+        self.ui.buttonSelectSugarsOnPage.clicked.connect(lambda: self.selectATextBox("EditSugars"))
+        self.ui.buttonSelectSaltsOnPage.clicked.connect(lambda: self.selectATextBox("EditSalts"))
+        self.ui.buttonSelectProteinOnPage.clicked.connect(lambda: self.selectATextBox("EditProteins"))
+
+        self.ui.buttonSelectBarcodeOnBarcode.clicked.connect(lambda: self.selectATextBox("Barcode"))
+
+
+
+        self.ui.button0Edit.clicked.connect(lambda: self.textInput("0", self.selectedTextBox))
+        self.ui.button1Edit.clicked.connect(lambda: self.textInput("1", self.selectedTextBox))
+        self.ui.button2Edit.clicked.connect(lambda: self.textInput("2", self.selectedTextBox))
+        self.ui.button3Edit.clicked.connect(lambda: self.textInput("3", self.selectedTextBox))
+        self.ui.button4Edit.clicked.connect(lambda: self.textInput("4", self.selectedTextBox))
+        self.ui.button5Edit.clicked.connect(lambda: self.textInput("5", self.selectedTextBox))
+        self.ui.button6Edit.clicked.connect(lambda: self.textInput("6", self.selectedTextBox))
+        self.ui.button7Edit.clicked.connect(lambda: self.textInput("7", self.selectedTextBox))
+        self.ui.button8Edit.clicked.connect(lambda: self.textInput("8", self.selectedTextBox))
+        self.ui.button9Edit.clicked.connect(lambda: self.textInput("9", self.selectedTextBox))
+
+        self.ui.button0Page.clicked.connect(lambda: self.textInput("0", self.selectedTextBox))
+        self.ui.button1Page.clicked.connect(lambda: self.textInput("1", self.selectedTextBox))
+        self.ui.button2Page.clicked.connect(lambda: self.textInput("2", self.selectedTextBox))
+        self.ui.button3Page.clicked.connect(lambda: self.textInput("3", self.selectedTextBox))
+        self.ui.button4Page.clicked.connect(lambda: self.textInput("4", self.selectedTextBox))
+        self.ui.button5Page.clicked.connect(lambda: self.textInput("5", self.selectedTextBox))
+        self.ui.button6Page.clicked.connect(lambda: self.textInput("6", self.selectedTextBox))
+        self.ui.button7Page.clicked.connect(lambda: self.textInput("7", self.selectedTextBox))
+        self.ui.button8Page.clicked.connect(lambda: self.textInput("8", self.selectedTextBox))
+        self.ui.button9Page.clicked.connect(lambda: self.textInput("9", self.selectedTextBox))
+
+        self.ui.buttonQEdit.clicked.connect(lambda: self.textInput("Q", self.selectedTextBox))
+        self.ui.buttonWEdit.clicked.connect(lambda: self.textInput("W", self.selectedTextBox))
+        self.ui.buttonEEdit.clicked.connect(lambda: self.textInput("E", self.selectedTextBox))
+        self.ui.buttonREdit.clicked.connect(lambda: self.textInput("R", self.selectedTextBox))
+        self.ui.buttonTEdit.clicked.connect(lambda: self.textInput("T", self.selectedTextBox))
+        self.ui.buttonYEdit.clicked.connect(lambda: self.textInput("Y", self.selectedTextBox))
+        self.ui.buttonUEdit.clicked.connect(lambda: self.textInput("U", self.selectedTextBox))
+        self.ui.buttonIEdit.clicked.connect(lambda: self.textInput("I", self.selectedTextBox))
+        self.ui.buttonOEdit.clicked.connect(lambda: self.textInput("O", self.selectedTextBox))
+        self.ui.buttonPEdit.clicked.connect(lambda: self.textInput("P", self.selectedTextBox))
+        self.ui.buttonAEdit.clicked.connect(lambda: self.textInput("A", self.selectedTextBox))
+        self.ui.buttonSEdit.clicked.connect(lambda: self.textInput("S", self.selectedTextBox))
+        self.ui.buttonDEdit.clicked.connect(lambda: self.textInput("D", self.selectedTextBox))
+        self.ui.buttonFEdit.clicked.connect(lambda: self.textInput("F", self.selectedTextBox))
+        self.ui.buttonGEdit.clicked.connect(lambda: self.textInput("G", self.selectedTextBox))
+        self.ui.buttonHEdit.clicked.connect(lambda: self.textInput("H", self.selectedTextBox))
+        self.ui.buttonJEdit.clicked.connect(lambda: self.textInput("J", self.selectedTextBox))
+        self.ui.buttonKEdit.clicked.connect(lambda: self.textInput("K", self.selectedTextBox))
+        self.ui.buttonLEdit.clicked.connect(lambda: self.textInput("L", self.selectedTextBox))
+        self.ui.buttonZEdit.clicked.connect(lambda: self.textInput("Z", self.selectedTextBox))
+        self.ui.buttonXEdit.clicked.connect(lambda: self.textInput("X", self.selectedTextBox))
+        self.ui.buttonCEdit.clicked.connect(lambda: self.textInput("C", self.selectedTextBox))
+        self.ui.buttonVEdit.clicked.connect(lambda: self.textInput("V", self.selectedTextBox))
+        self.ui.buttonBEdit.clicked.connect(lambda: self.textInput("B", self.selectedTextBox))
+        self.ui.buttonNEdit.clicked.connect(lambda: self.textInput("N", self.selectedTextBox))
+        self.ui.buttonMEdit.clicked.connect(lambda: self.textInput("M", self.selectedTextBox))
+        self.ui.buttonSlashEdit.clicked.connect(lambda: self.textInput("/", self.selectedTextBox))
+
+        self.ui.button0Barcode.clicked.connect(lambda: self.textInput("0", self.selectedTextBox))
+        self.ui.button1Barcode.clicked.connect(lambda: self.textInput("1", self.selectedTextBox))
+        self.ui.button2Barcode.clicked.connect(lambda: self.textInput("2", self.selectedTextBox))
+        self.ui.button3Barcode.clicked.connect(lambda: self.textInput("3", self.selectedTextBox))
+        self.ui.button4Barcode.clicked.connect(lambda: self.textInput("4", self.selectedTextBox))
+        self.ui.button5Barcode.clicked.connect(lambda: self.textInput("5", self.selectedTextBox))
+        self.ui.button6Barcode.clicked.connect(lambda: self.textInput("6", self.selectedTextBox))
+        self.ui.button7Barcode.clicked.connect(lambda: self.textInput("7", self.selectedTextBox))
+        self.ui.button8Barcode.clicked.connect(lambda: self.textInput("8", self.selectedTextBox))
+        self.ui.button9Barcode.clicked.connect(lambda: self.textInput("9", self.selectedTextBox))
+
+        # endregion
+
+    def selectATextBox(self, selection):
+        self.selectedTextBox = selection
+
+    def textInput(self, text, selectedTextBox):
+        if (selectedTextBox == "EditBarcode"):
+            newtext = self.ui.BarcodeInput_2.text() + text
+            self.ui.BarcodeInput_2.setText(newtext)
+        if (selectedTextBox == "EditName"):
+            newtext = self.ui.NameOfFoodInput.text() + text
+            self.ui.NameOfFoodInput.setText(newtext)
+        if (selectedTextBox == "EditAmount"):
+            newtext = self.ui.QuantityInput.text() + text
+            self.ui.QuantityInput.setText(newtext)
+        if (selectedTextBox == "EditUseByDate"):
+            newtext = self.ui.UseByDateInput.text() + text
+            self.ui.UseByDateInput.setText(newtext)
+
+        if (selectedTextBox == "EditCalories"):
+            newtext = self.ui.CaloriesInput.text() + text
+            self.ui.CaloriesInput.setText(newtext)
+        if (selectedTextBox == "EditProteins"):
+            newtext = self.ui.ProteinInput.text() + text
+            self.ui.ProteinInput.setText(newtext)
+        if (selectedTextBox == "EditSalts"):
+            newtext = self.ui.SaltsInput.text() + text
+            self.ui.SaltsInput.setText(newtext)
+        if (selectedTextBox == "EditSugars"):
+            newtext = self.ui.SugarsInput.text() + text
+            self.ui.SugarsInput.setText(newtext)
+        if (selectedTextBox == "EditFats"):
+            newtext = self.ui.FatsInput.text() + text
+            self.ui.FatsInput.setText(newtext)
+
+        if (selectedTextBox == "Barcode"):
+            newtext = self.ui.BarcodeInput.text() + text
+            self.ui.BarcodeInput.setText(newtext)
 
     def show(self):
         self.Main_win.show()
 
     def showInventory(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Inventory)
-
 
     def showHome(self):
         self.clearAdd()
@@ -58,12 +173,14 @@ class MainWindow:
         self.ui.stackedWidget.setCurrentWidget(self.ui.Remove)
 
     def showRemoveWithBarcode(self):
+        self.selectATextBox("Barcode")
         self.ui.stackedWidget.setCurrentWidget(self.ui.Barcode_Add)
 
     def showEditItem(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Edit)
 
     def showBarcode_Add(self):
+        self.selectATextBox("Barcode")
         self.ui.stackedWidget.setCurrentWidget(self.ui.Barcode_Add)
 
     def searchDatabase(self):
@@ -71,7 +188,7 @@ class MainWindow:
         inventory = dataBase('inventory.txt')
         inventory.readRecords()
         item = inventory.getItemWithBarcode(barcode)
-        if(item != False):
+        if (item != False):
             self.ui.BarcodeInput_2.setText(item['barcode'])
             self.ui.NameOfFoodInput.setText(item['item'])
             self.ui.QuantityInput.setText(item['amount'])
@@ -87,18 +204,16 @@ class MainWindow:
     def RemoveBarcodeSearch(self):
         Barcode = self.ui.BarcodeInput_3.text()
         with open(r'InventoryDatabase.txt', 'r') as fp:
-        # read all lines in a list
-             lines = fp.readlines()
-             for line in lines:
-             # check if string present on a current line
-                 if ((line.find(Barcode) != -1) & (Barcode != "")):
-                     print(Barcode, 'string exists in file')
-                     print('Line Number:', lines.index(line))
-                     print('Line:', line)
-                     text = line
-                     self.ui.RemoveCheck.setText(text)
-
-
+            # read all lines in a list
+            lines = fp.readlines()
+            for line in lines:
+                # check if string present on a current line
+                if ((line.find(Barcode) != -1) & (Barcode != "")):
+                    print(Barcode, 'string exists in file')
+                    print('Line Number:', lines.index(line))
+                    print('Line:', line)
+                    text = line
+                    self.ui.RemoveCheck.setText(text)
 
         fp.close()
 
@@ -115,10 +230,6 @@ class MainWindow:
             fp.writelines(lines)
         fp.close()
 
-
-
-
-
     def showNoBarcode_Add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.NoBarcode_Add)
 
@@ -133,12 +244,12 @@ class MainWindow:
         barcode = self.ui.BarcodeInput_2.text()
         item = self.ui.NameOfFoodInput.text()
         quantity = self.ui.QuantityInput.text()
-        useByDate= self.ui.UseByDateInput.text()
-        calories= self.ui.CaloriesInput.text()
-        protein= self.ui.ProteinInput.text()
-        salts= self.ui.SaltsInput.text()
-        sugars= self.ui.SugarsInput.text()
-        fats= self.ui.FatsInput.text()
+        useByDate = self.ui.UseByDateInput.text()
+        calories = self.ui.CaloriesInput.text()
+        protein = self.ui.ProteinInput.text()
+        salts = self.ui.SaltsInput.text()
+        sugars = self.ui.SugarsInput.text()
+        fats = self.ui.FatsInput.text()
 
         record = {
             "barcode": barcode,
@@ -155,9 +266,6 @@ class MainWindow:
         self.clearAdd()
         self.refreshInventory()
 
-
-
-
     def clearAdd(self):
         self.ui.BarcodeInput_2.setText("")
         self.ui.NameOfFoodInput.setText("")
@@ -173,15 +281,13 @@ class MainWindow:
         with open('InventoryDatabase.txt', 'r') as f:
             last_line = f.readlines()[-1]
         print(last_line)
-        #object = QLabel(last_line)
-        #self.ui.verticalLayout.addWidget(object)
+        # object = QLabel(last_line)
+        # self.ui.verticalLayout.addWidget(object)
 
-        #with open('InventoryDatabase.txt') as f:
-            #contents = f.read()
-            #object = QLabel(contents)
-            #self.verticalLayout.addWidget(object)
-
-
+        # with open('InventoryDatabase.txt') as f:
+        # contents = f.read()
+        # object = QLabel(contents)
+        # self.verticalLayout.addWidget(object)
 
 
 if __name__ == "__main__":
