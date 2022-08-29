@@ -52,6 +52,12 @@ class MainWindow:
 
         self.ui.buttonSelectBarcodeOnBarcode.clicked.connect(lambda: self.selectATextBox("Barcode"))
 
+        self.ui.buttonClearEdit.clicked.connect(lambda: self.clearTextBox(self.selectedTextBox))
+        self.ui.buttonClearPage.clicked.connect(lambda: self.clearTextBox(self.selectedTextBox))
+        self.ui.buttonClearBarcode.clicked.connect(lambda: self.clearTextBox(self.selectedTextBox))
+
+
+
 
 
         self.ui.button0Edit.clicked.connect(lambda: self.textInput("0", self.selectedTextBox))
@@ -116,6 +122,29 @@ class MainWindow:
         self.ui.button9Barcode.clicked.connect(lambda: self.textInput("9", self.selectedTextBox))
 
         # endregion
+    def clearTextBox(self, selectedTextBox):
+        if (selectedTextBox == "EditBarcode"):
+            self.ui.BarcodeInput_2.setText("")
+        if (selectedTextBox == "EditName"):
+            self.ui.NameOfFoodInput.setText("")
+        if (selectedTextBox == "EditAmount"):
+            self.ui.QuantityInput.setText("")
+        if (selectedTextBox == "EditUseByDate"):
+            self.ui.UseByDateInput.setText("")
+
+        if (selectedTextBox == "EditCalories"):
+            self.ui.CaloriesInput.setText("")
+        if (selectedTextBox == "EditProteins"):
+            self.ui.ProteinInput.setText("")
+        if (selectedTextBox == "EditSalts"):
+            self.ui.SaltsInput.setText("")
+        if (selectedTextBox == "EditSugars"):
+            self.ui.SugarsInput.setText("")
+        if (selectedTextBox == "EditFats"):
+            self.ui.FatsInput.setText("")
+
+        if (selectedTextBox == "Barcode"):
+            self.ui.BarcodeInput.setText("")
 
     def selectATextBox(self, selection):
         self.selectedTextBox = selection

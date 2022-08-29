@@ -838,6 +838,13 @@ class Ui_MainWindow(object):
         self.buttonSelectBarcodeOnBarcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
         self.buttonSelectBarcodeOnBarcode.setObjectName("buttonSelectBarcodeOnBarcode")
 
+        self.buttonClearBarcode = QtWidgets.QPushButton(self.Barcode_Add)
+        self.buttonClearBarcode.setGeometry(QtCore.QRect(365, 300, 75, 30))
+        self.buttonClearBarcode.setPalette(palette)
+        self.buttonClearBarcode.setFont(font)
+        self.buttonClearBarcode.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonClearBarcode.setObjectName("buttonClearBarcode")
+
 #endregion
 #region button edit page
 
@@ -868,6 +875,13 @@ class Ui_MainWindow(object):
         self.buttonSelectUseByDateOnEdit.setFont(font)
         self.buttonSelectUseByDateOnEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
         self.buttonSelectUseByDateOnEdit.setObjectName("buttonSelectUseByDateOnEdit")
+
+        self.buttonClearEdit = QtWidgets.QPushButton(self.NoBarcode_Add)
+        self.buttonClearEdit.setGeometry(QtCore.QRect(145, 270, 75, 30))
+        self.buttonClearEdit.setPalette(palette)
+        self.buttonClearEdit.setFont(font)
+        self.buttonClearEdit.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonClearEdit.setObjectName("buttonClearEdit")
 
 
 #region keyboard Edit page
@@ -1175,6 +1189,13 @@ class Ui_MainWindow(object):
         self.buttonSelectSaltsOnPage.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
         self.buttonSelectSaltsOnPage.setObjectName("buttonSelectSaltsOnPage")
 
+        self.buttonClearPage = QtWidgets.QPushButton(self.page)
+        self.buttonClearPage.setGeometry(QtCore.QRect(355, 350, 75, 30))
+        self.buttonClearPage.setPalette(palette)
+        self.buttonClearPage.setFont(font)
+        self.buttonClearPage.setStyleSheet("background-color: rgb(38, 38, 38);\n""color:rgb(227, 225, 225);")
+        self.buttonClearPage.setObjectName("buttonClearPage")
+
         #region numbers
         self.button1Page = QtWidgets.QPushButton(self.page)
         self.button1Page.setGeometry(QtCore.QRect(250, 320, 25, 25))
@@ -1322,12 +1343,14 @@ class Ui_MainWindow(object):
         self.button8Barcode.setText(_translate("MainWindow", "8"))
         self.button9Barcode.setText(_translate("MainWindow", "9"))
         self.buttonSelectBarcodeOnBarcode.setText(_translate("MainWindow", "Select"))
+        self.buttonClearBarcode.setText(_translate("MainWindow", "Clear"))
 #endregion
 #region Translate edit buttons
         self.buttonSelectBarcodeOnEdit.setText((_translate("MainWindow", "Select")))
         self.buttonSelectNameOnEdit.setText((_translate("MainWindow", "Select")))
         self.buttonSelectAmountOnEdit.setText((_translate("MainWindow", "Select")))
         self.buttonSelectUseByDateOnEdit.setText((_translate("MainWindow", "Select")))
+        self.buttonClearEdit.setText((_translate("MainWindow", "Clear")))
 #endregion
 #region Translate nutritional buttons
         self.buttonSelectCaloriesOnPage.setText((_translate("MainWindow", "Select")))
@@ -1335,6 +1358,7 @@ class Ui_MainWindow(object):
         self.buttonSelectFatsOnPage.setText((_translate("MainWindow", "Select")))
         self.buttonSelectSugarsOnPage.setText((_translate("MainWindow", "Select")))
         self.buttonSelectSaltsOnPage.setText((_translate("MainWindow", "Select")))
+        self.buttonClearPage.setText((_translate("MainWindow", "Clear")))
 
         self.button1Page.setText(_translate("MainWindow", "1"))
         self.button2Page.setText(_translate("MainWindow", "2"))
