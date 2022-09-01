@@ -154,7 +154,7 @@ class MainWindow:
                            "MIME-Version: 1.0", "Content-Type: text/html"]
                 headers = "\r\n".join(headers)
 
-                # Connect to Gmail Server
+                # Connect to Gmail Servers
                 session = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
                 session.ehlo()
                 session.starttls()
@@ -190,15 +190,14 @@ class MainWindow:
                                   record["protein"],record["salts"],
                                   record["sugars"],record["fats"]])
                  if record["amount"] != '0':
-                     trList.append(f'<td> {record["barcode"]}</td>'\
-                                   f'<td> {record["item"]}</td>'\
-                                   f'<td> {record["amount"]}</td>'\
-                                   f'<td> {record["calories"]}</td>'\
-                                   f'<td> {record["protein"]}</td>'\
-                                   f'<td> {record["salts"]}</td>'\
-                                   f'<td> {record["sugars"]}</td>'\
+                     trList.append(f'<td> {record["barcode"]}</td>' \
+                                   f'<td> {record["item"]}</td>' \
+                                   f'<td> {record["amount"]}</td>' \
+                                   f'<td> {record["calories"]}</td>' \
+                                   f'<td> {record["protein"]}</td>' \
+                                   f'<td> {record["salts"]}</td>' \
+                                   f'<td> {record["sugars"]}</td>' \
                                    f'<td> {record["fats"]}</td>')
-
             htmlContent = (f'''
                 <table>
                 <thead>
@@ -234,7 +233,7 @@ class MainWindow:
 
 
 
-            sendTo = 'ethanevans114@gmail.com'
+            sendTo = 'EthanEvans114@gmail.com'
             emailSubject = "Inventory Infomation"
             sender.sendmail(sendTo, emailSubject, string)
             print(htmlContent)
