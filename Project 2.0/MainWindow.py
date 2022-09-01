@@ -234,7 +234,7 @@ class MainWindow:
 
 
 
-            sendTo = 'taiyejebutu@icloud.com'
+            sendTo = 'ethanevans114@gmail.com'
             emailSubject = "Inventory Infomation"
             sender.sendmail(sendTo, emailSubject, string)
             print(htmlContent)
