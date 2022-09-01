@@ -1626,8 +1626,9 @@ class Ui_MainWindow(object):
         contents = ''
         count = 0
         for dict in dictData['inventory']:
-            contents = contents + json.dumps(dict) + "\n"
-            count += 1
+            if dict["amount"] != '0':
+                contents = contents + json.dumps(dict) + "\n"
+                count += 1
         line = 30 + 19 * (count + 1)
         contents = re.sub('[{"}]', '', contents)
         self.FrontPageInvent.setText(contents)
@@ -1642,8 +1643,9 @@ class Ui_MainWindow(object):
         contents = ''
         count = 0
         for dict in dictData['inventory']:
-            contents = contents + json.dumps(dict) + "\n"
-            count += 1
+            if dict["amount"] != '0':
+                contents = contents + json.dumps(dict) + "\n"
+                count += 1
         line = 30 + 19 * (count + 1)
         contents = re.sub('[{"}]', '', contents)
         self.Inventory_2.setText(contents)
