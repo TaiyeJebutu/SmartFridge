@@ -166,65 +166,63 @@ class MainWindow:
                 # Send Email & Exit
                 session.sendmail(GMAIL_USERNAME, recipient, headers + "\r\n\r\n" + content)
                 session.quit
+        try:
+            sender = Emailer()
 
-        sender = Emailer()
+            inventory = dataBase('inventory.txt')
+            inventory.readRecords()
+            dictData = inventory.outData()
+            content = Texttable()
+            content.set_cols_dtype(["t", "t","t","t","t","t","t","t",])
+            content.add_row(["Barcode","Name","Quantity","Calories","Proteins","Fats","Sugars","Salts"])
 
-        inventory = dataBase('inventory.txt')
-        inventory.readRecords()
-        dictData = inventory.outData()
-        content = Texttable()
-        content.set_cols_dtype(["t", "t","t","t","t","t","t","t",])
-        content.add_row(["Barcode","Name","Quantity","Calories","Proteins","Fats","Sugars","Salts"])
+            trList = []
 
-        trList = []
+            def returnRecordsHTML(recordsList):
+                message =''
+                for records in recordsList:
+                    message = message +'<tr>'+ records+'</tr>'
+                return message
+            for record in dictData["inventory"]:
+                 print(record["barcode"])
+                 content.add_row([record["barcode"],record["item"],
+                                  record["amount"],record["calories"],
+                                  record["protein"],record["salts"],
+                                  record["sugars"],record["fats"]])
 
-        def returnRecordsHTML(recordsList):
-            message =''
-            for records in recordsList:
-                message = message +'<tr>'+ records+'</tr>'
-            return message
-        for record in dictData["inventory"]:
-             print(record["barcode"])
-             content.add_row([record["barcode"],record["item"],
-                              record["amount"],record["calories"],
-                              record["protein"],record["salts"],
-                              record["sugars"],record["fats"]])
+                 trList.append(f'<td> {record["barcode"]}</td>'\
+                               f'<td> {record["item"]}</td>'\
+                               f'<td> {record["amount"]}</td>'\
+                               f'<td> {record["calories"]}</td>'\
+                               f'<td> {record["protein"]}</td>'\
+                               f'<td> {record["salts"]}</td>'\
+                               f'<td> {record["sugars"]}</td>'\
+                               f'<td> {record["fats"]}</td>')
 
-             trList.append(f'<td> {record["barcode"]}</td>'\
-                           f'<td> {record["item"]}</td>'\
-                           f'<td> {record["amount"]}</td>'\
-                           f'<td> {record["calories"]}</td>'\
-                           f'<td> {record["protein"]}</td>'\
-                           f'<td> {record["salts"]}</td>'\
-                           f'<td> {record["sugars"]}</td>'\
-                           f'<td> {record["fats"]}</td>')
-
-        htmlContent = (f'''
-            <table>
-            <thead>
-              <tr>
-                <th>Barcode</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Calories</th>
-                <th>Proteins</th>
-                <th>Fats</th>
-                <th>Sugars</th>
-                <th>Salts</th>
-              </tr>
-            </thead>
-            <tbody>
-              {returnRecordsHTML(trList)}
-            </tbody>
-            </table>''')
-        string = "Hi there,\n"\
-                 "\n\n\n"\
-                 "Here are the items that you have:\n"\
-                 f"{htmlContent}\n\n"\
-                 "Have a lovely day\n"\
-                 "Kind Regards,\nThe ImechE Team"
-
-
+            htmlContent = (f'''
+                <table>
+                <thead>
+                  <tr>
+                    <th>Barcode</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Calories</th>
+                    <th>Proteins</th>
+                    <th>Fats</th>
+                    <th>Sugars</th>
+                    <th>Salts</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {returnRecordsHTML(trList)}
+                </tbody>
+                </table>''')
+            string = "Hi there,\n"\
+                     "\n\n\n"\
+                     "Here are the items that you have:\n"\
+                     f"{htmlContent}\n\n"\
+                     "Have a lovely day\n"\
+                     "Kind Regards,\nThe ImechE Team"
 
 
 
@@ -234,11 +232,15 @@ class MainWindow:
 
 
 
-        sendTo = 'taiyejebutu@icloud.com'
-        emailSubject = "Inventory Infomation"
-        sender.sendmail(sendTo, emailSubject, string)
-        print(htmlContent)
-        print("Email Sent")
+
+
+            sendTo = 'taiyejebutu@icloud.com'
+            emailSubject = "Inventory Infomation"
+            sender.sendmail(sendTo, emailSubject, string)
+            print(htmlContent)
+            print("Email Sent")
+        except:
+            pass
 
 
     def OmeletteRecipe(self):

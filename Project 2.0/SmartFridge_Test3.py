@@ -1420,7 +1420,7 @@ class Ui_MainWindow(object):
         self.ViewInventory.setText(_translate("MainWindow", "View Inventory"))
         self.sendEmail.setText(_translate("MainWindow", "Email current Inventory"))
         self.Date.setText(_translate("MainWindow", "TextLabel"))
-        self.label_2.setText(_translate("MainWindow", "TextLabel"))
+        self.label_2.setText(_translate("MainWindow", "Weather Unavailable"))
         self.ReturnHome.setText(_translate("MainWindow", "Click to return to the home screen"))
         self.EditAnItem.setText(_translate("MainWindow", "Recipes"))
         self.RemoveAnItem.setText(_translate("MainWindow", "Add/ Remove an Item"))
