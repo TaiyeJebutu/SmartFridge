@@ -189,15 +189,15 @@ class MainWindow:
                                   record["amount"],record["calories"],
                                   record["protein"],record["salts"],
                                   record["sugars"],record["fats"]])
-
-                 trList.append(f'<td> {record["barcode"]}</td>'\
-                               f'<td> {record["item"]}</td>'\
-                               f'<td> {record["amount"]}</td>'\
-                               f'<td> {record["calories"]}</td>'\
-                               f'<td> {record["protein"]}</td>'\
-                               f'<td> {record["salts"]}</td>'\
-                               f'<td> {record["sugars"]}</td>'\
-                               f'<td> {record["fats"]}</td>')
+                 if record["amount"] != '0':
+                     trList.append(f'<td> {record["barcode"]}</td>'\
+                                   f'<td> {record["item"]}</td>'\
+                                   f'<td> {record["amount"]}</td>'\
+                                   f'<td> {record["calories"]}</td>'\
+                                   f'<td> {record["protein"]}</td>'\
+                                   f'<td> {record["salts"]}</td>'\
+                                   f'<td> {record["sugars"]}</td>'\
+                                   f'<td> {record["fats"]}</td>')
 
             htmlContent = (f'''
                 <table>
